@@ -1,0 +1,66 @@
+body {
+    background: #fff url("https://image.ibb.co/mPw26m/fruit.jpg");
+  }
+  
+  header{
+    background: #efc;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: .1rem 1rem;
+    margin-bottom: .3rem;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Leckerli One', cursive;
+    color: #355005;
+  }
+  
+  .grid {
+    display: flex;
+  }
+  
+  .col {
+    flex: 1 1 25%;
+  
+    &--wide {
+      flex: 0 0 50%;
+    }
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 0.2rem;
+    padding: 0.8rem;
+    border-radius: .4rem;
+  
+    &--fruity {
+      background: #efc;
+    }
+  }
+  
+  .item-display {
+    &__list {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    &__item {
+      flex: 0 0 50%;
+  
+    }
+  
+    &__card {
+      &--is-selected {
+        border: 1px solid #e08420;
+        background: #ffef9e;
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      display: block;
+    }
+  }
